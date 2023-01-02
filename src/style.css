@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jura", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 36px;
+}
+
+/* Header styling */
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+/* Form styling */
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Meme styling */
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+/* Footer styling */
+
+.container {
+  position: relative;
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  font-family: "Roboto", sans-serif;
+  padding: 25px;
+}
+
+.call-to-action {
+  width: 100%;
+  clear: both;
+  position: relative;
+  background-color: rgb(19, 19, 19);
+  bottom: 0;
+}
+
+.footer-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.center h1 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.center p {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Jura", sans-serif;
+}
+
+.links__icon {
+  font-size: 40px;
+  color: white;
+  -webkit-transition: ease-in 0.25s;
+  transition: ease-in 0.25s;
+  cursor: pointer;
+}
+
+.links__icon:hover {
+  -webkit-transition: ease-in 0.25s;
+  transition: ease-in 0.25s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.copyright {
+  margin-top: 25px;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 300;
+}
