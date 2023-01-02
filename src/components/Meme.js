@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 export default function Meme() {
   const [meme, setMeme] = React.useState({
@@ -8,7 +9,7 @@ export default function Meme() {
   });
   const [allMemes, setAllMemes] = React.useState([]);
 
-  React.useEffect(async () => {
+  useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
       .then((res) => res.json())
       .then((data) => setAllMemes(data.data.memes));
@@ -55,7 +56,11 @@ export default function Meme() {
         </button>
       </div>
       <div className="meme">
-        <img src={meme.randomImage} className="meme--image" />
+        <img
+          src={meme.randomImage}
+          alt="another meme"
+          className="meme--image"
+        />
         <h2 className="meme--text top">{meme.topText}</h2>
         <h2 className="meme--text bottom">{meme.bottomText}</h2>
       </div>
